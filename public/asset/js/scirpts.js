@@ -319,6 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (username === 'admin' && password === '123') {
             alert('Đăng nhập thành công');
+            window.location.href = 'index.html';
         } else {
             alert('Sai thông tin username hoặc password');
         }
