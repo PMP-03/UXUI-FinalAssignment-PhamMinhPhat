@@ -1,0 +1,20 @@
+@use "../abstracts";
+
+.logo{
+    width: 295px;
+    @include abstracts.screen(lg){
+        width: 230px;
+    }
+    &__img{
+        width: 100%;
+        @include abstracts.screen(lg){
+            width: 100%;
+        }
+    }
+    &__footer{
+        width: 400px;
+        @include abstracts.screen(sm){
+            width: 100%;
+        }
+    }
+}

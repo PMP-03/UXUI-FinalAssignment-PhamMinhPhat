@@ -1,0 +1,81 @@
+@use "../abstracts";
+
+.noti{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #a9272f;
+    border-radius: 8px;
+    @include abstracts.screen(lg){
+        padding: 30px 30px;
+
+    }
+    @include abstracts.screen(sm){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        width: 80%;
+        margin-top: 0;
+        
+    }
+    &__left{
+        width: 60%;
+        @include abstracts.screen(lg){
+            width: 50%;
+        }
+        @include abstracts.screen(sm){
+            width: 100%;
+        }
+    }
+    &__heading{
+        font-size: 3rem !important;
+        color: #fff !important;
+    }
+    &__title{
+        padding-top: 15px;
+        line-height: 1.4;
+        color: #fff;
+        @include abstracts.screen(sm){
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &__right{
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        @include abstracts.screen(lg){
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 60%;
+        }
+        @include abstracts.screen(sm){
+            gap: 2px;
+            width: 100%;
+        }
+    }
+    &__email{
+        padding: 7px 15px;
+        background: var(--bg-color);
+        @include abstracts.screen(lg){
+            padding: 0;
+            height: 30px;
+        }
+    }
+    &__btn{
+        margin-top: 40px;
+        padding: 7px 10px;
+        width: 60px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #fff;
+        background: #000;
+        @include abstracts.screen(lg){
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@use "../abstracts";
+
+.home{
+    &__container{
+        margin-top: 40px;
+        
+        @include abstracts.screen(md){
+            margin-top: 30px;
+        }
+    }
+    &__top{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        &::before{
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background: var(--drop-border);
+        }
+    }
+    &__heading{
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--text-color);
+        
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__btn{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--color-home-link);
+        
+    }
+    &__icon{
+        width: 10px;
+        height: 10px;
+        fill: var(--color-home-link);
+        
+    }
+    &__link:hover &__icon,
+    &__link:hover &__btn{
+        color: var(--color-home-link-hover);
+        fill: var(--color-home-link-hover);
+    }
+    
+    &__banner{
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    &__desc{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: #f2f2f2;
+        @include abstracts.screen(lg){
+            font-size: 3rem;
+            left: 3% !important;
+            text-align: center;
+        }
+        @include abstracts.screen(sm){
+            font-size: 1.6rem;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 300px;
+        object-fit: inherit;
+        @include abstracts.screen(lg){
+            height: 240px;
+        }
+        @include abstracts.screen(sm){
+            height: 100px;
+        }
+    }
+}

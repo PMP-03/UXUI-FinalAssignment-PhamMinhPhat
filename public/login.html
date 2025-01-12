@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FUJIFILM SHOP - login</title>
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./asset/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./asset/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./asset/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./asset/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./asset/favicon/site.webmanifest" />
+        <!-- Font -->
+        <link rel="stylesheet" href="./asset/font/stylesheet.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./asset/css/main.css" />
+        <!-- JS -->
+        <script src="./asset/js/layout.js"></script>
+        <script src="./asset/js/scirpts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+
+        <div class="login container">
+            <img src="./asset/img/sildeShow/Ống-kính-Fujifilm-dáng-mua-Ontop.vn_-jpg.webp" alt="">
+            <div class="login-box">
+                <h1>Login</h1>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter your username"
+                            required
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        />
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <div class="other-options">
+                    <p><a href="#">Forgot Password?</a></p>
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

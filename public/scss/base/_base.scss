@@ -1,0 +1,82 @@
+@use "../abstracts";
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Roboto, sans-serif;
+    background: var(--bg-color);
+}
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a,
+img,
+button, 
+input, 
+textarea, 
+select{
+    font-family: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+.sale::after{
+    display: inline-block;
+    position: absolute;
+    content: "SALE!";
+    top: -5px;
+    left: -35px;
+    padding: 2px;
+    width: 30px;
+    height: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    background: #dd3333;
+    color: #000;
+    @include abstracts.screen(lg){
+        top: 19px;
+        left: 25px;
+    }   
+}
+.closer{
+    display: none;
+    &-icon{
+        width: 25px;
+        height: 25px;
+        fill: var(--text-drop);
+    }
+}
+.btn{
+    padding: 10px 30px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    color: var(--text-drop);
+    @include abstracts.screen(sm){
+        border-radius: 999px;
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+}
+.star-icon,
+.icon{
+    width: 17px;
+    height: 17px;
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}

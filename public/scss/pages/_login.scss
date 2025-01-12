@@ -1,0 +1,96 @@
+@use "../abstracts";
+
+// Biến màu sắc cho dễ dàng tùy chỉnh
+$primary-color: #2f80ed;
+$hover-color: #1866c3;
+$text-color: #333;
+$link-color: #0073e6;
+$background-color: #f6f8fa;
+$white: #fff;
+$border-color: #ccc;
+
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    @include abstracts.screen(sm){
+        justify-content: center;
+    }
+    gap: 15px;
+    margin-bottom: 100px;
+    height: 100%;
+    
+    img{
+        width: 50%;
+        object-fit: contain;
+        @include abstracts.screen(sm){
+            display: none;
+        }
+    }
+    .login-box {
+        background-color: var(--bg-color);
+        // padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        text-align: center;
+        @include abstracts.screen(sm){
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+
+            label {
+                font-size: 14px;
+                color: var(--text-color);
+
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: $white;
+            background-color: var(--bg-btn-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--bg-btn-color-hover);
+            }
+        }
+
+        .other-options {
+            margin-top: 20px;
+            font-size: 14px;
+
+            a {
+                color: $link-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

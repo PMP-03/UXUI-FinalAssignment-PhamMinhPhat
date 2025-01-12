@@ -1,0 +1,524 @@
+<div class="container">
+    <div class="top-bar">
+        <!-- more -->
+        <button
+            class="top-bar__more d-none d-lg-block js-toggle"
+            toggle-target="#navbar"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="icon top-bar__more-icon"
+            >
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+            </svg>
+        </button>
+        <!-- logo -->
+        <a href="./index.html" class="logo">
+            <img
+                src="./asset/img/category/logo-fujifilmshop-2025-1000x272.png"
+                alt=""
+                class="logo__img"
+            />
+        </a>
+        <!-- search -->
+        <div class="search">
+            <input type="search" name="" class="search__enter" />
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="search__btn"
+            >
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+            </svg>
+        </div>
+        <!-- actions -->
+        <div class="top-act">
+            <button class="top-act__group">
+                <span class="top-act__title d-lg-none">GIỎ HÀNG</span>
+                <img
+                    src="./asset/img/category/gio-hang-fujifilm.png"
+                    alt="gio-hang"
+                    class="top-act__icon"
+                />
+            </button>
+            <button class="top-act__group">
+                <a href="./login.html"><span class="top-act__title d-lg-none">ĐĂNG NHẬP</span></a>
+            </button>
+        </div>
+    </div>
+
+    <!-- search LG -->
+    <div class="search search-lg">
+        <input type="search" name="" class="search__enter" />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="search__btn"
+        >
+            <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+        </svg>
+    </div>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar hide">
+        <!-- X LG -->
+        <div class="closer">
+            <button class="closer-icon js-toggle" toggle-target="#navbar">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    class="closer-icon"
+                >
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                </svg>
+            </button>
+        </div>
+        <!-- search NAV LG -->
+        <div class="search search-lg">
+            <input type="search" name="" class="search__enter" />
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="search__btn"
+            >
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+            </svg>
+        </div>
+        <ul class="navbar__list js-dropdown-list">
+            <li class="navbar__item">
+                <a href="" class="navbar__link sale">KHUYẾN MÃI</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">CỬA HÀNG</a>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link">X SERIES </a>
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Máy ảnh mirroless</a>
+                        <a href="" class="drop-down__link">Máy ảnh compact</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link"
+                        >GFX SERIES
+                        
+                    </a>
+                    <img
+                            src="../asset/icon/down-arrow-svgrepo-com.svg"
+                            alt=""
+                            class="navbar__arrow"
+                        />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Máy ảnh medium format</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link">ỐNG KÍNH </a>
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Ống kính mirroless</a
+                        >
+                        <a href="" class="drop-down__link"
+                            >Ống kính medium format</a
+                        >
+                    </div>
+                </div>
+            </li>
+
+            <li class="navbar__item">
+                <a href="" class="navbar__link">INSTAX</a>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link"
+                        >ĐỒ CŨ
+                    </a>
+                    <img
+                            src="../asset/icon/down-arrow-svgrepo-com.svg"
+                            alt=""
+                            class="navbar__arrow"
+                        />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Máy ảnh Fujifilm cũ</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">THU CŨ</a>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link"
+                        >CHO THUÊ
+                        
+                    </a>
+                    <img
+                            src="../asset/icon/down-arrow-svgrepo-com.svg"
+                            alt=""
+                            class="navbar__arrow"
+                        />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Thuê máy ảnh Fujifilm</a
+                        >
+                        <a href="" class="drop-down__link"
+                            >Thuê ống kính Fujifilm</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <div class="navbar__items">
+                    <a href="" class="navbar__link"
+                        >PHỤ KIỆN
+                        
+                    </a>
+                    <img
+                            src="../asset/icon/down-arrow-svgrepo-com.svg"
+                            alt=""
+                            class="navbar__arrow"
+                        />
+                </div>
+                <div class="drop-down d-none">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Túi, balo</a>
+                        <a href="" class="drop-down__link">Dây đeo</a>
+                        <a href="" class="drop-down__link">Sạc, pin</a>
+                        <a href="" class="drop-down__link">Thẻ nhớ</a>
+                        <a href="" class="drop-down__link">Tripod</a>
+                        <a href="" class="drop-down__link">Filter</a>
+                        <a href="" class="drop-down__link">Lens Caps & Hoods</a>
+                        <a href="" class="drop-down__link">Thiết bị chống âm</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">TIN TỨC</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="" class="navbar__link sale">KHUYẾN MÃI</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">CỬA HÀNG</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >X SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Máy ảnh mirroless</a>
+                        <a href="" class="drop-down__link">Máy ảnh compact</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >GFX SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Máy ảnh medium format</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >ỐNG KÍNH
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link"
+                            >Ống kính mirroless</a
+                        >
+                        <a href="" class="drop-down__link"
+                            >Ống kính medium format</a
+                        >
+                    </div>
+                </div>
+            </li>
+
+            <li class="navbar__item">
+                <a href="" class="navbar__link">INSTAX</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >ĐỒ CŨ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Máy ảnh Fujifilm cũ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">THU CŨ</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >CHO THUÊ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Thuê máy ảnh Fujifilm</a>
+                        <a href="" class="drop-down__link"
+                            >Thuê ống kính Fujifilm</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link"
+                    >PHỤ KIỆN
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+                <div class="drop-down">
+                    <div class="drop-down__inner">
+                        <a href="" class="drop-down__link">Túi, balo</a>
+                        <a href="" class="drop-down__link">Dây đeo</a>
+                        <a href="" class="drop-down__link">Sạc, pin</a>
+                        <a href="" class="drop-down__link">Thẻ nhớ</a>
+                        <a href="" class="drop-down__link">Tripod</a>
+                        <a href="" class="drop-down__link">Filter</a>
+                        <a href="" class="drop-down__link">Lens Caps & Hoods</a>
+                        <a href="" class="drop-down__link">Thiết bị chống âm</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">TIN TỨC</a>
+            </li>
+            <li class="navbar__item">
+                <a href="" class="navbar__link">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- <nav class="navbar">
+        <ul class="navbar__list">
+            <li>
+                <a href="" class="navbar__link sale">KHUYẾN MÃI</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">CỬA HÀNG</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >X SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >GFX SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >ỐNG KÍNH
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="navbar__link"
+                    >ĐỒ CŨ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">INSTAX</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">THU CŨ</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >CHO THUÊ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">PHỤ KIỆN</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- <nav class="navbar">
+        <ul class="navbar__list">
+            <li>
+                <a href="" class="navbar__link sale">KHUYẾN MÃI</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">CỬA HÀNG</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >X SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >GFX SERIES
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >ỐNG KÍNH
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">INSTAX</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >ĐỒ CŨ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">THU CŨ</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link"
+                    >CHO THUÊ
+                    <img
+                        src="../asset/icon/down-arrow-svgrepo-com.svg"
+                        alt=""
+                        class="navbar__arrow"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">PHỤ KIỆN</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="" class="navbar__link">LIÊN HỆ</a>
+            </li>
+        </ul>
+    </nav> -->
+</div>

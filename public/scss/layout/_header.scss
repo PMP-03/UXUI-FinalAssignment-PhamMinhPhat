@@ -1,0 +1,272 @@
+@use "../abstracts";
+
+%flexItemCenter{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    background: var(--bg-color);
+    padding-top: 20px;
+    position: sticky;
+    top: -10px;
+    z-index: 1;
+}
+
+.top-bar{
+    position: relative;
+    padding-bottom: 15px;
+    @extend %flexItemCenter;
+    justify-content: space-between;
+    gap: 30px;
+    &::before{
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: #474747;
+        opacity: 0.2;
+    }
+    &__more{
+        &-icon{
+            width: 20px;
+            height: 20px;
+            fill: var(--text-color);
+        }
+    }
+
+}
+
+.search{
+    width: 50%;
+    @include abstracts.screen(lg){
+        display: none;
+    }
+    &-lg{
+        display: none;
+        padding: 20px 0;
+        @include abstracts.screen(lg){
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    position: relative;
+    &__enter{
+        width: 100%;
+        height: 35px;
+        border-radius: 6px;
+        padding:  0 30px 0 20px;
+        border: none;
+        color: var(--text-color);
+        background: var(--bg-color);
+        box-shadow: inset 0px 0px 6px 0px rgb(255 255 255 / 0%), inset 0 3px 5px rgb(195 195 195 / 40%);
+    }
+    &__btn{
+        @include abstracts.screen(lg){
+            top: 27px;
+        }
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 18px;
+        height: 18px;
+        fill: var(--text-color);
+        cursor: pointer;
+    }
+}
+
+.top-act{
+    display: flex;
+    &__group{
+        cursor: pointer;
+        &:hover .top-act__title{
+            color: var(--text-color-hover);
+        }
+        @extend %flexItemCenter;
+    }
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+    &__icon{
+        width: 50px;
+    }
+}
+
+.top-user{
+    
+    cursor: pointer;
+    &__title{
+        &:hover{
+            color: var(--text-color-hover);
+        }
+        font-weight: 700;
+        color: var(--text-color);
+        
+    }
+}
+
+.navbar{
+    // display: none;
+    @include abstracts.screen(lg){
+        position: fixed;
+        inset: 0 0% 0 0;
+        // padding: 20px;
+        background: var(--bg-color);
+        translate: -100%;
+        transition: translate 0.5s;
+        overflow-y: auto;
+        &.show{
+            translate: 0;
+        }
+    }
+    padding-top: 25px;
+    & .closer{
+        @include abstracts.screen(lg){
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+    }
+    & .search-lg{
+        padding: 25px;
+        & .search__btn{
+            top: 35px;
+            right: 35px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        @include abstracts.screen(lg){
+            flex-direction: column;
+            
+        }
+    }
+    &__item{
+        &s{
+            display: flex;
+            
+            @include abstracts.screen(lg){
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+        }
+        &:hover .drop-down{
+            display: block !important;
+        }
+        @include abstracts.screen(lg){
+            &::before{
+                display: inline-block;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: var(--drop-border);
+            }
+            &:hover::before{
+                // display: none;
+            }
+            & .sale{
+                padding-left: 60px;
+            }
+        }
+    }
+    &__link{
+        position: relative;
+        @extend %flexItemCenter;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--text-color);
+        padding: 0 10px;
+        padding-bottom: 20px;
+        &:hover {
+            color: var(--text-color-hover);
+        }
+        &:hover .navbar__arrow{
+            filter: var(--filter-color-icon-hover);
+        }
+        @include abstracts.screen(lg){
+            @extend %flexItemCenter;
+            justify-content: space-between;
+            width: 90%;
+            padding-top: 20px;
+            padding-left: 25px;
+            padding-right: 20px;
+        }
+    }
+    &__arrow{
+        width: 10px;
+        height: 10px;
+        filter: var(--filter-color-icon);
+        @include abstracts.screen(lg){
+            margin-right: 20px;
+            padding: 20px;
+            width: 52px;
+            height: 52px;
+        }
+        
+    }
+    .drop-down{
+        
+        position: absolute;
+        &::before{
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            top: -20px;
+            left: 30px;
+            background: var(--drop-border);
+            clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+        }
+        @include abstracts.screen(lg){
+            position: inherit;
+        }
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--drop-border);
+            background: var(--bg-color);
+            box-shadow: 1px 1px 15px rgba(0,0,0,.15);
+            padding: 20px;
+            padding-right: 50px;
+            @include abstracts.screen(lg){
+                border: none;
+    
+            }
+        }
+        &__link{
+            color: var(--text-drop);
+            transition: opacity .25s,visibility .25s;
+            padding: 5px;
+            padding-right: 40px;
+            width: 100%;
+            &:hover{
+                color: var(--text-drop-hover);
+            }
+            &::after{
+                display: inline-block;
+                content: "";
+                width: 130%;
+                height: 1px;
+                background: var(--drop-border);
+                @include abstracts.screen(lg){
+                    display: none;
+                }
+            }
+            &:last-child::after{
+                display: none;
+                // padding-bottom: 10px;
+            }
+    
+        }
+    }
+}
+
